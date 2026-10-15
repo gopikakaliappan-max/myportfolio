@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Meera Nair · Python Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top">meera<span>.py</span></a>
+    <nav aria-label="Main">
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="icon-btn" id="theme" aria-label="Toggle dark mode">◐</button></li>
+      </ul>
+    </nav>
+    <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="menu">☰</button>
+  </div>
+</header>
+
+<main id="top" class="wrap">
+  <div class="hero">
+    <div>
+      <h1>I build <mark>Python</mark> backends and data tools.</h1>
+      <p>Hi, I'm Meera Nair, a Python developer who builds reliable APIs, automation scripts and data pipelines that teams can maintain.</p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="code" aria-label="Python code sample">
+      <div class="code-top"><i></i><i></i><i></i></div>
+      <pre id="code" aria-live="off"></pre>
+    </div>
+  </div>
+
+  <section id="about" class="about">
+    <div>
+      <h2>About me</h2>
+      <p class="sub">I have 4 years of experience turning messy requirements into clean, tested Python. I like readable code, good logging and APIs that are documented before they ship.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><b data-count="4">0</b><span>years coding</span></div>
+      <div class="stat"><b data-count="25">0</b><span>projects shipped</span></div>
+      <div class="stat"><b data-count="12">0</b><span>open-source PRs</span></div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <p class="sub">Tools I use most days.</p>
+    <ul class="chips">
+      <li>Python 3</li><li>Django</li><li>FastAPI</li><li>Flask</li><li>PostgreSQL</li><li>Pandas</li>
+      <li>Celery</li><li>Docker</li><li>pytest</li><li>Git</li><li>REST APIs</li><li>AWS</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p class="sub">A few things I've built. Replace these with your own.</p>
+    <div class="filters" role="group" aria-label="Filter projects">
+      <button data-f="all" aria-pressed="true">All</button>
+      <button data-f="web" aria-pressed="false">Web</button>
+      <button data-f="data" aria-pressed="false">Data</button>
+      <button data-f="auto" aria-pressed="false">Automation</button>
+    </div>
+    <div class="grid" id="grid">
+      <article class="card" data-c="web">
+        <h3>TaskFlow API</h3>
+        <p>A FastAPI service for team task tracking with JWT auth, rate limiting and auto-generated docs.</p>
+        <div class="tags">FastAPI, PostgreSQL, Docker</div>
+        <a href="#">View on GitHub</a>
+      </article>
+      <article class="card" data-c="data">
+        <h3>Sales Insight Dashboard</h3>
+        <p>Cleans monthly sales CSVs with Pandas and produces charts and a summary report.</p>
+        <div class="tags">Pandas, Matplotlib, Streamlit</div>
+        <a href="#">View on GitHub</a>
+      </article>
+      <article class="card" data-c="auto">
+        <h3>Invoice Bot</h3>
+        <p>Reads invoices from email, extracts the totals and files them into a spreadsheet automatically.</p>
+        <div class="tags">Python, Celery, Redis</div>
+        <a href="#">View on GitHub</a>
+      </article>
+      <article class="card" data-c="web">
+        <h3>Blog Platform</h3>
+        <p>A Django blog with markdown posts, comments, tags and full-text search.</p>
+        <div class="tags">Django, SQLite, HTML/CSS</div>
+        <a href="#">View on GitHub</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <h2>Let's work together</h2>
+      <p>I'm open to full-time roles and freelance Python work. Send me a message and I'll reply within two days.</p>
+      <a class="btn" href="mailto:meera@example.com">Email me</a>
+      <div class="links">
+        <a href="#">GitHub</a><a href="#">LinkedIn</a><a href="#">Resume</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>© <span id="yr"></span> Meera Nair. Built with HTML, CSS and JavaScript.</footer>
+<script src="script.js"></script>
+</body>
+</head>
+</html>
+
